@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  flex-flow: column;
+  background: hsl(233, 47%, 7%);
+  font-size: 15px;
+}
+
+.main-container {
+  background: hsl(244, 38%, 16%);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.text-container {
+  margin: 55px;
+  position: relative;
+}
+
+.big-text {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+  display: inline;
+}
+
+.main-paragraph {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+
+.bottom-info {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+}
+
+.stat {
+  width: 100%;
+}
+
+.stat-heading {
+  margin: 0;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.img-container {
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+  background-image: url(images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 446px;
+}
+
+.for-img-size{
+visibility: hidden;
+display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  padding: 5px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 375px) {
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  .whole-body {
+    margin: 50px 25px;
+  }
+
+  .container {
+    flex-flow: column-reverse;
+    text-align: center;
+  }
+
+  .text-container {
+    margin: 35px;
+  }
+
+  .big-text {
+    font-size: 24px;
+  }
+
+  .bottom-info {
+    position: static;
+    display: block;
+    margin-top: 40px;
+  }
+
+  .stat {
+    margin-top: 25px;
+  }
+
+  .for-img-size{
+    display: block;
+    width: 100%;
+  }
+  .img-container {
+    background-size: cover;
+    min-height: auto;
+  }
+}
